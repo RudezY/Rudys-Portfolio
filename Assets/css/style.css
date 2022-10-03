@@ -10,7 +10,7 @@
     --dark: rgb(77, 84, 85);
     --light: rgb(108, 108, 116);
   }
-  
+  /* body formatting, Font etc */
   body {
     margin: 0;
     padding: 0;
@@ -79,7 +79,7 @@
     margin-top: 20px;
     margin-bottom: 45px;
   }
-  
+  /* hero banner sizing */
   .hero-banner {
       background: rgb(33, 65, 117);
       background-image: url("../images/hero-image.jpg");
@@ -147,7 +147,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+  /* flex item formatting */
   .flex-item {
     border: 5px solid var(--secondary);
     background-color: var(--primary);
@@ -183,7 +183,7 @@
   .flex-item h3 {
     font-size: 1.6rem;
   }
-  
+  /* contact flex formatting */
   #contact address {
     display: flex;
     flex-wrap: wrap;
@@ -229,12 +229,13 @@
   
   /* end portfolio project images */
   
+  /* media screen formatting for larger screens */
   @media screen and (max-width: 980px) {
     header {
       padding: 0 0 10px 0;
       justify-content:center;
       text-align: center;
-    
+
     }
   
     header h1 {
@@ -263,7 +264,7 @@
       font-size: 7vw;
     }
   }
-  
+  /* media screen formatting for smaller screens */
   @media screen and (max-width: 768px) {
     .flex-item,
     .flex-item:first-child {
