@@ -53,4 +53,4 @@ The following animation shows the web application's appearance and functionality
 This project was to create a portfolio website including both HTML and CSS coding from a blank page. The project was to try and closely match a demo website within certain parameters. With all the parameters met, I styled and chose certain aspects of the hover selector that I personally would prefer on my own personal portfolio. 
 The images are just are just place holders until each project can be renamed with a proper project as well as proper pictures relating to the project that it will be listed under.
 
-![HW2 Screenshot](../HW2/Assets/images/portfolio-1.png)
+![HW2 Screenshot](./assets/images/portfolio-1.png)
