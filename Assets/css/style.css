@@ -52,7 +52,10 @@
     font-size: 4vw;
     line-height: 1;
   }
-  
+  header img {
+    max-width: 100px;
+    max-height: 100px;
+  }
   nav {
     display: flex;
     flex-direction: row;
@@ -164,6 +167,10 @@
     transition: all 0.5s;
     font-size: 0.9rem;
   }
+
+  span {
+    align-items: center;
+  }
   
   /* feature first portfolio item */
   .flex-item:first-child {
@@ -172,7 +179,8 @@
   }
   
   .flex-item:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+   border-radius: 35px;
+   border-color: black;
   }
   
   .flex-item div {
