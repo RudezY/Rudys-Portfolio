@@ -27,7 +27,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: var(--cool);
+    background-color: var(--light);
   }
 
   /* Formatting for the H1 within the header */
