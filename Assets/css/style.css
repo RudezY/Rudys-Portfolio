@@ -19,20 +19,7 @@
     background-color: var(--light);
     line-height: 1.5;
   }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
+  /* Header formatting */
   header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -41,10 +28,10 @@
     flex-wrap: wrap;
     align-items: center;
     background-color: var(--cool);
-    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
   }
-  
-  header h1 {
+
+  /* Formatting for the H1 within the header */
+  h1 {
     color: var(--primary);
     background-color: var(--light);
     padding: 5px 1% 5px 6%;
@@ -52,25 +39,20 @@
     font-size: 4vw;
     line-height: 1;
   }
+/* Formatting for header image */
   header img {
     max-width: 100px;
     max-height: 100px;
+    border-radius: 90%;
   }
+  /* Formatting for Nav bar */
   nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
   }
-
-  nav span {
-    position: absolute;
-    display: none;
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-  }
-  
+/* formatting for anchor tags within nav */
   nav a {
     text-decoration: none;
     padding: 5px 10px;
@@ -78,15 +60,11 @@
     margin-right: 10px;
     font-size: 1.4rem;
   }
-  
+  /* This changes the color of text to black when hovering over the nav section */
   nav a:hover {
    color: black; 
   }
-
-  nav a:last-child {
-    margin-right: 0;
-  }
-
+/* This sets the margin for the main */
   main {
     margin-top: 20px;
     margin-bottom: 45px;
@@ -110,7 +88,7 @@
   .hero-banner div {
     flex: 0 0 90%;
   }
-  
+  /* formatting for the h2 of the hero banner */
   .hero-banner h2 {
     background-color: var(--secondary);
     color: var(--cool);
@@ -120,13 +98,13 @@
     line-height: 1.2;
     display: inline;
   }
-  
+  /* This sets width and margins for the page-info */
   .page-info{
     max-width: 88%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+  /* formatting for the page section class */
   .page-section {
     margin: 25px 0;
     padding: 10px 0;
@@ -136,7 +114,7 @@
     align-items: stretch;
     justify-content: space-between;
   }
-  
+  /* formatting for the h2 within the page section */
   .page-section > h2 {
     flex: 0 0 20%;
     text-align: right;
@@ -153,7 +131,7 @@
   .page-section p {
     margin-bottom: 20px;
   }
-  
+  /* formatting for the flex container class */
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -186,12 +164,12 @@
       min-height: 400px;
       flex-basis: 100%;
   }
-  
+  /* sets color and border radius for flex item */
   .flex-item:hover {
    border-radius: 35px;
    border-color: black;
   }
-  
+ 
   .flex-item div {
     background-color: var(--secondary);
     padding: 8px 10px;
@@ -208,8 +186,8 @@
     align-items: center;
     height: 100%;
   }
-  
-  #contact address a {
+  /* formatting for the anchors within the contact */
+  #contact a {
     color: var(--secondary);
     padding: 5px;
     text-decoration: none;
