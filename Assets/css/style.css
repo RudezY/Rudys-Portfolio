@@ -95,13 +95,14 @@ nav a:hover {
 }
 /* formatting for the h2 of the hero banner */
 .hero-banner h2 {
-  background-color: var(--secondary);
+ background-color: var(--secondary);
   color: var(--light);
   margin: 0;
-  padding: 5px 10px;
-  font-size: 2.3rem;
+  padding: 0px 5px;
+  font-size: 40px;
   line-height: 1.2;
   display: inline;
+  border-radius: 50px;
 }
 
 /* This sets the margin for the main */
