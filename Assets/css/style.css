@@ -1,280 +1,295 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  /* brand color palette */
-  :root {
-    --primary: rgb(252, 252, 252);
-    --secondary: rgb(238, 234, 234);
-    --dark: rgb(77, 84, 85);
-    --light: rgb(108, 108, 116);
-  }
-  /* body formatting, Font etc */
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--primary);
-    background-color: var(--light);
-    line-height: 1.5;
-  }
-  /* Header formatting */
-  header {
-    padding: 15px 6% 15px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: var(--light);
-  }
+  box-sizing: border-box;
+}
 
-  /* Formatting for the H1 within the header */
-  h1 {
-    color: var(--primary);
-    background-color: var(--light);
-    padding: 5px 1% 5px 6%;
-    margin: 0;
-    font-size: 4vw;
-    line-height: 1;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+/* brand color palette */
+:root {
+  --primary: rgb(252, 252, 252);
+  --secondary: rgb(238, 234, 234);
+  --dark: rgb(77, 84, 85);
+  --light: rgb(108, 108, 116);
+}
+/* body formatting, Font etc */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--primary);
+  background-color: var(--light);
+  line-height: 1.5;
+}
+/* Header formatting */
+header {
+  padding: 15px 6% 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--light);
+}
+
+/* Formatting for the H1 within the header */
+h1 {
+  color: var(--primary);
+  background-color: var(--light);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
+  align-items: flex;
+}
 /* Formatting for header image */
-  header img {
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 90%;
-  }
-  /* Formatting for Nav bar */
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-  }
+header img {
+  display: flex;
+  position: relative;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 90%;
+}
+
+/* Formatting for Nav bar */
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
 /* formatting for anchor tags within nav */
-  nav a {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: var(--secondary);
-    margin-right: 10px;
-    font-size: 1.4rem;
-  }
-  /* This changes the color of text to black when hovering over the nav section */
-  nav a:hover {
-   color: black; 
-  }
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--secondary);
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+/* This changes the color of text to black when hovering over the nav section */
+nav a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline overline;
+}
+
+/* hero banner sizing */
+.hero-banner {
+  background-image: url("../images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 175px;
+  color: var(--light);
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-banner div {
+  flex: 0 0 90%;
+}
+/* formatting for the h2 of the hero banner */
+.hero-banner h2 {
+  background-color: var(--secondary);
+  color: var(--light);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+}
+
 /* This sets the margin for the main */
-  main {
-    margin-top: 20px;
-    margin-bottom: 45px;
-  }
-  /* hero banner sizing */
-  .hero-banner {
-      background-image: url("../images/hero-image.jpg");
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: soft-light;
-    min-height: 175px;
-    color: var(--light);
-    padding: 2% 6%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
-  }
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+/* This sets width and margins for the page-info */
+.page-info {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* formatting for the page section class */
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+/* formatting for the h2 within the page section */
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
+}
+
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
+}
+/* formatting for the flex container class */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* flex item formatting */
+.flex-item {
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--light);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+span {
+  align-items: center;
+}
+
+/* feature first portfolio item */
+.flex-item:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+/* sets color and border radius for flex item */
+.flex-item:hover {
+  border-radius: 35px;
+  border-color: black;
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+/* contact flex formatting */
+#contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+/* formatting for the anchors within the contact */
+#contact a {
+  color: var(--secondary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+#contact address a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline overline;
   
-  .hero-banner div {
-    flex: 0 0 90%;
-  }
-  /* formatting for the h2 of the hero banner */
-  .hero-banner h2 {
-    background-color: var(--secondary);
-    color: var(--light);
-    margin: 0;
-    padding: 5px 10px;
-    font-size: 2.3rem;
-    line-height: 1.2;
-    display: inline;
-  }
-  /* This sets width and margins for the page-info */
-  .page-info{
-    max-width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* formatting for the page section class */
-  .page-section {
-    margin: 25px 0;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
-  }
-  /* formatting for the h2 within the page section */
-  .page-section > h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid var(--primary);
-    font-size: 4vw;
-    line-height: 1.1;
-  }
-  
-  .page-section > div {
-    flex: 0 0 77%;
-  }
-  
-  .page-section p {
-    margin-bottom: 20px;
-  }
-  /* formatting for the flex container class */
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
+}
+
+/* portfolio project images "These are temporary images"*/
+.project-1 {
+  background-image: url("https://www.cmuse.org/wp-content/uploads/2020/06/learn-coding-lessons-online.jpg");
+}
+
+.project-2 {
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/23/08/57/ball-457334_960_720.jpg");
+}
+
+.project-3 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923_960_720.png");
+}
+
+.project-4 {
+  background-image: url("https://cdn.pixabay.com/photo/2014/12/30/10/39/code-583795_960_720.jpg");
+}
+
+.project-5 {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/18/18/37/programming-1836330_960_720.png");
+}
+
+/* end portfolio project images */
+
+/* media screen formatting for larger screens */
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
     justify-content: center;
-  }
-  /* flex item formatting */
-  .flex-item {
-    border: 5px solid var(--secondary);
-    background-color: var(--primary);
-    color: var(--light);
-    min-height: 150px;
-    max-height: 150px;
-    flex-basis: calc(50% - 1em);
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 20px 0;
-    margin: 0.5em;
-    text-decoration: none;
-    background-size: 150%;
-    transition: all 0.5s;
-    font-size: 0.9rem;
+    text-align: center;
   }
 
-  span {
-    align-items: center;
-  }
-  
-  /* feature first portfolio item */
-  .flex-item:first-child {
-      min-height: 400px;
-      flex-basis: 100%;
-  }
-  /* sets color and border radius for flex item */
-  .flex-item:hover {
-   border-radius: 35px;
-   border-color: black;
-  }
- 
-  .flex-item div {
-    background-color: var(--secondary);
-    padding: 8px 10px;
-  }
-  
-  .flex-item h3 {
-    font-size: 1.6rem;
-  }
-  /* contact flex formatting */
-  #contact address {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-  }
-  /* formatting for the anchors within the contact */
-  #contact a {
-    color: var(--secondary);
+  header h1 {
+    width: 100%;
     padding: 5px;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-style: normal;
-    margin: 0 0.2rem 0.1rem;
-    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 10vw;
   }
-  
-  #contact address a:hover {
-    color: black;
-  }
-  
-  /* portfolio project images "These are temporary images"*/
-  .project-1 {
-    background-image: url("https://www.cmuse.org/wp-content/uploads/2020/06/learn-coding-lessons-online.jpg");
-  }
-  
-  .project-2 {
-    background-image: url("https://cdn.pixabay.com/photo/2014/09/23/08/57/ball-457334_960_720.jpg");
-  }
-  
-  .project-3 {
-    background-image: url("https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923_960_720.png");
-  }
-  
-  .project-4 {
-    background-image: url("https://cdn.pixabay.com/photo/2014/12/30/10/39/code-583795_960_720.jpg");
-  }
-  
-  .project-5 {
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/18/18/37/programming-1836330_960_720.png");
-  }
-  
-  /* end portfolio project images */
-  
-  /* media screen formatting for larger screens */
-  @media screen and (max-width: 980px) {
-    header {
-      padding: 0 0 10px 0;
-      justify-content:center;
-      text-align: center;
 
-    }
-  
-    header h1 {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      font-size: 10vw;
-    }
-  
-    nav {
+  nav {
     justify-content: center;
-    }
-    
-  
-    .page-section > h2,
-    .page-section > div {
-      flex: 0 0 100%;
-    }
-  
-    .page-section > h2 {
-      border-right: none;
-      border-bottom: 4px solid var(--primary);
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      text-align: left;
-      font-size: 7vw;
-    }
   }
-  /* media screen formatting for smaller screens */
-  @media screen and (max-width: 768px) {
-    .flex-item,
-    .flex-item:first-child {
-      flex-basis: 100%;
-    }
-  
-    .flex-item:first-child {
-      min-height: 150px;
-    }
-  
-    .hero-banner {
-      justify-content: center;
-      text-align: center;
-    }
-  
-    .contact address {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 100%;
   }
+
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+/* media screen formatting for smaller screens */
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
