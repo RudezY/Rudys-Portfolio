@@ -168,9 +168,7 @@ main {
   font-size: 0.9rem;
 }
 
-span {
-  align-items: center;
-}
+
 
 /* feature first portfolio item */
 .flex-item:first-child {
